@@ -1,0 +1,4 @@
+add_lunch_combo aokp_vanquish-eng
+add_lunch_combo cm_vanquish-userdebug
+add_lunch_combo cna_vanquish-eng
+add_lunch_combo full_vanquish-eng
