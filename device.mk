@@ -2,11 +2,14 @@
 $(call inherit-product-if-exists, vendor/motorola/vanquish/vanquish-vendor.mk)
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/vendor/motorola/vanquish/overlay/aosp
+DEVICE_PACKAGE_OVERLAYS += device/motorola/vanquish/overlay/aosp
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
+# IDC
+PRODUCT_COPY_FILES += device/motorola/vanquish/idc/melfas-ts.idc:system/usr/idc/melfas-ts.idc
 
 # copy all kernel modules under the "modules" directory to system/lib/modules
 #PRODUCT_COPY_FILES += $(shell \
