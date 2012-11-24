@@ -13,10 +13,6 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # IDC
 PRODUCT_COPY_FILES += $(DEVICE_FOLDER)/idc/melfas-ts.idc:system/usr/idc/melfas-ts.idc
 
-# Audio configuration
-PRODUCT_COPY_FILES += \
-    $(DEVICE_FOLDER)/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
-
 # Radio and Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
