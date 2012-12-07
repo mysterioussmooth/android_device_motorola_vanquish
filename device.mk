@@ -17,6 +17,12 @@ PRODUCT_COPY_FILES += $(DEVICE_FOLDER)/idc/melfas-ts.idc:system/usr/idc/melfas-t
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/media_profiles.xml:system/etc/media_profiles.xml
 
+# CM-specific init file for SafeStrap
+ifeq ($(TARGET_PRODUCT),cm_vanquish)
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/init.local.rc:system/etc/rootfs/init.cm.rc
+endif
+
 # Radio and Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
