@@ -4,6 +4,9 @@
 # inherit from the proprietary version
 -include vendor/motorola/vanquish/BoardConfigVendor.mk
 
+# Locked Bootloader
+BOARD_HAS_LOCKED_BOOTLOADER := true
+
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 11811160064
 
 # Bluetooth
