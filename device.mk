@@ -51,3 +51,4 @@ $(call inherit-product-if-exists, vendor/motorola/msm8960-common/msm8960-common-
 # ICS camera blobs
 $(call inherit-product-if-exists, vendor/motorola/vanquish/vanquish_ics_camera.mk)
 $(call inherit-product-if-exists, vendor/motorola/vanquish/vanquish_gps.mk)
+$(call inherit-product-if-exists, vendor/motorola/vanquish/vanquish_jb_adreno.mk)
